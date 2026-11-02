@@ -45,3 +45,16 @@
 ### Validation
 - Pending CloudFormation template validation.
 - Deployment not yet performed.
+
+## Stage 4 - Security Group creation
+
+### Implemented
+- Create a security group for our EC2s and ALBs that enable HTTP access.
+
+### Outstanding
+- Create the 2 Webserver Instances defining the configuration and associations along with a bash start up script.
+- Validate the template, the Instances and AutoScaling Group works.
+
+### Validation
+- Pending CloudFormation template validation.
+- Deployment not yet performed.

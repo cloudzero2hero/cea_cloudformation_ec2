@@ -153,3 +153,15 @@ Resources:
       LoadBalancerArn: !Ref AppLoadBalancer
       Port: 80
       Protocol: 'HTTP'
+
+ # Web Server / ALB Security Group
+  WebServerSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: 'Enable HTTP Access'
+      VpcId: !Ref MyVPC
+      SecurityGroupIngress:
+        - IpProtocol: 'tcp'
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: '0.0.0.0/0'
