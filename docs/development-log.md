@@ -70,3 +70,13 @@
 ### Validation
 - Pending CloudFormation template validation.
 - Deployment not yet performed.
+
+## Stage 6 - Validation
+
+### Implemented
+- Validate the template, the Instances and AutoScaling Group works.
+
+### Validation
+- CloudFormation stack successfully reaching CREATE_COMPLETE.
+- Instances appearing across the configured Availability Zones.
+- ALB successfully distributing traffic between the available EC2 instances.
