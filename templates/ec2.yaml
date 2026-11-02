@@ -142,3 +142,14 @@ Resources:
       Targets:
         - Id: !Ref WebServerInstance1A
         - Id: !Ref WebServerInstance2B
+
+  # Listener for ALB
+  MyListener:
+    Type: 'AWS::ElasticLoadBalancingV2::Listener'
+    Properties:
+      DefaultActions:
+        - Type: 'forward'
+          TargetGroupArn: !Ref MyTargetGroup
+      LoadBalancerArn: !Ref AppLoadBalancer
+      Port: 80
+      Protocol: 'HTTP'

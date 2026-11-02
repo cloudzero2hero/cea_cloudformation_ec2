@@ -31,3 +31,17 @@
 ### Validation
 - Pending CloudFormation template validation.
 - Deployment not yet performed.
+
+## Stage 3 - Listener creation for ALB
+
+### Implemented
+- Create the listener for the ALB that will forward the traffic to our target group.
+
+### Outstanding
+- Create a security group for our EC2s and ALBs that enable HTTP access.
+- Create the 2 Webserver Instances defining the configuration and associations along with a bash start up script.
+- Validate the template, the Instances and AutoScaling Group works.
+
+### Validation
+- Pending CloudFormation template validation.
+- Deployment not yet performed.
