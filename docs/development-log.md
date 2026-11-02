@@ -58,3 +58,15 @@
 ### Validation
 - Pending CloudFormation template validation.
 - Deployment not yet performed.
+
+## Stage 5 - Webserver Instance creation & configuration with bash script
+
+### Implemented
+- Create the 2 Webserver Instances defining the configuration and associations along with a bash start up script.
+
+### Outstanding
+- Validate the template, the Instances and AutoScaling Group works.
+
+### Validation
+- Pending CloudFormation template validation.
+- Deployment not yet performed.
